@@ -43,6 +43,18 @@
             </ul>
         </div>
     </header>
+    <header>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+
+                <li><a asp-area="" asp-controller="StackedChart" asp-action="Index">Stacked Chart</a></li>
+                <li><a asp-area="" asp-controller="LineChart" asp-action="Index">Line Chart</a></li>
+
+            </ul>
+    </header>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
